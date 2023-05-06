@@ -2,6 +2,12 @@ import { useState } from "react";
 import Image from "next/image";
 
 const joinsoon = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+  });
+  console.log(form);
+
   return (
     <div className="bg-black flex justify-center items-center flex-col py-10 w-screen h-screen px-10">
       <div>
@@ -16,6 +22,12 @@ const joinsoon = () => {
           placeholder="Enter your name"
           required
           className="bg-white border border-[#2ABC7F] text-black text-sm rounded-lg block w-full p-2.5 focus:outline-none"
+          onChange={(e) => {
+            setForm({
+              ...form,
+              name: e.target.value,
+            });
+          }}
         />
       </div>
       <div className="mb-5 lg:w-96 w-full">
@@ -27,6 +39,12 @@ const joinsoon = () => {
           placeholder="Enter your email address"
           required
           className="bg-white border border-[#2ABC7F] text-black text-sm rounded-lg block w-full p-2.5 focus:outline-none"
+          onChange={(e) => {
+            setForm({
+              ...form,
+              email: e.target.value,
+            });
+          }}
         />
       </div>
       <div className="lg:w-96 w-full grid place-content-center mt-2">
