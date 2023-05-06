@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Card from "./Card";
 
 const MainSection = () => {
   const menu = [
@@ -67,6 +68,13 @@ const MainSection = () => {
           </a>
         ))}
       </nav>
+      <div className=" flex mt-5 gap-10 justify-center flex-wrap">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
   );
 };
