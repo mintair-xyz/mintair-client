@@ -68,7 +68,7 @@ const MainSection = () => {
           </a>
         ))}
       </nav>
-      <div className=" flex mt-5 gap-10 justify-center flex-wrap">
+      <div className=" flex mt-16 gap-10 justify-center flex-wrap">
         <Card />
         <Card />
         <Card />
