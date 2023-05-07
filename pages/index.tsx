@@ -1,7 +1,11 @@
-import LaunchingSoon from "@/components/Home/LaunchingSoon";
+import JoinWaitList from "@/components/Home/Joinwaitlist";
 
 const index = () => {
-  return <LaunchingSoon />;
+  return (
+    <>
+      <JoinWaitList />
+    </>
+  );
 };
 
 export default index;
