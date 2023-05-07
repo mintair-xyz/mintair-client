@@ -18,12 +18,13 @@ const JoinWaitList = () => {
             nulla eaque error neque ipsa culpa autem, at itaque nostrum!
           </p>
 
-          <div className="relative mb-3 lg:w-96 w-full">
+          <div className="relative z-0 mb-3 lg:w-96 w-full">
             <input
               id="name"
               type="text"
+              placeholder=" "
               required
-              className=" border-b py-1 focus:outline-none focus:border-secondary focus:border-b-2 transition-colors w-full bg-transparent peer text-white"
+              className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer"
               autoComplete="off"
               onChange={(e) => {
                 setForm({
@@ -34,18 +35,18 @@ const JoinWaitList = () => {
             />
             <label
               htmlFor="name"
-              className=" absolute left-0 top-1 text-[#868186] cursor-text peer-focus:text-sm peer-focus:-top-4 peer-focus:text-secondary transition-all"
+              className="absolute text-base text-gray-500 duration-300 transform -translate-y-6 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-6"
             >
               Name
             </label>
           </div>
-          <div className="relative mt-6 mb-3 lg:w-96 w-full">
+          <div className="relative z-0 mt-6 mb-3 lg:w-96 w-full">
             <input
               id="email"
               type="text"
               placeholder=" "
               required
-              className=" border-b py-1 focus:outline-none focus:border-secondary focus:border-b-2 transition-colors w-full bg-transparent peer text-white"
+              className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer"
               autoComplete="off"
               onChange={(e) => {
                 setForm({
@@ -56,7 +57,7 @@ const JoinWaitList = () => {
             />
             <label
               htmlFor="email"
-              className=" absolute left-0 top-1 text-[#868186] cursor-text peer-focus:text-sm peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-secondary transition-all"
+              className="absolute text-base text-gray-500 duration-300 transform -translate-y-6 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-secondary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-6"
             >
               Email
             </label>

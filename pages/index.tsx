@@ -1,4 +1,4 @@
-import JoinWaitList from "@/components/Home/Joinwaitlist";
+import JoinWaitList from "@/components/Home/JoinWaitList";
 
 const index = () => {
   return (
