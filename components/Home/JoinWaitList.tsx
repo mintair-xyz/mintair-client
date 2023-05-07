@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { postWaitListData } from "@/utlis/services/api";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { BsTwitter } from "react-icons/bs";
 
@@ -16,7 +16,6 @@ const JoinWaitList = () => {
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
       if (emailRegex.test(form.email) && form.name.length > 0) {
         let postdata = await postWaitListData(form);
-        console.log(postdata);
         if (postdata.success) {
           toast.success("Wohoooo, you have joined the waiting list", {
             position: "top-right",
@@ -28,7 +27,9 @@ const JoinWaitList = () => {
           });
         } else {
           toast.warn(
-            "Oops, Something went wrong! Refresh the page and contact us."
+            postdata?.msg
+              ? postdata.msg
+              : "Oops, Something went wrong! Refresh the page and contact us."
           );
         }
       } else {
