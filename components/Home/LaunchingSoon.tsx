@@ -10,7 +10,7 @@ const LaunchingSoon = () => {
       <div className=" text-lg font-semibold text-neutral-500">
         Want to increase your chances of receiving airdrops? MintAir helps you
         stay organized and up-to-date with all your airdrop opportunities. With
-        on-chain tracking and custom alerts, you'll never miss out on free
+        on-chain tracking and custom alerts, you&apos;ll never miss out on free
         tokens again.
       </div>
       <Link href="/joinsoon">
