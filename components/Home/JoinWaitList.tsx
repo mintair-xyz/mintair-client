@@ -25,12 +25,20 @@ const JoinWaitList = () => {
             draggable: true,
             progress: undefined,
           });
+          setForm({
+            name: "",
+            email: "",
+          });
         } else {
           toast.warn(
             postdata?.msg
               ? postdata.msg
               : "Oops, Something went wrong! Refresh the page and contact us."
           );
+          setForm({
+            name: "",
+            email: "",
+          });
         }
       } else {
         toast.error("Please enter a valid email address and name");
@@ -63,6 +71,7 @@ const JoinWaitList = () => {
               required
               className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer"
               autoComplete="off"
+              value={form.name}
               onChange={(e) => {
                 setForm({
                   ...form,
@@ -83,6 +92,7 @@ const JoinWaitList = () => {
               type="text"
               placeholder=" "
               required
+              value={form.email}
               className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-secondary peer"
               autoComplete="off"
               onChange={(e) => {
