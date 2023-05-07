@@ -13,6 +13,7 @@ export const postWaitListData = async (form: any) => {
     return {
       success: false,
       error: err.response.data.message,
+      ...err.response.data,
     };
   }
 };
