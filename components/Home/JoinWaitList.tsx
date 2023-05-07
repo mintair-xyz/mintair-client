@@ -112,7 +112,7 @@ const JoinWaitList = () => {
         <div className="relative h-80 w-full sm:h-96 lg:h-full lg:w-1/2 overflow-clip">
           <img
             alt="Welcome"
-            src="/background.svg"
+            src="/background.png"
             className="absolute object-cover w-full h-full"
           />
         </div>
