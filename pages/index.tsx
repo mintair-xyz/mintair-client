@@ -7,7 +7,7 @@ import Footer from "@/components/shared/Footer";
 const index = () => {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <Hero />
       <MainSection />
       <Footer />
