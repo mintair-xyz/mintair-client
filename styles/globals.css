@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  @apply m-0 p-0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
+}
+
+::-webkit-scrollbar {
+  @apply w-1.5 rounded-b-full;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply m-0 rounded-full p-0;
+  box-sizing: border-box;
 }
