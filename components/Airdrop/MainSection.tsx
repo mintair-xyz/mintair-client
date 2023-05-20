@@ -72,11 +72,15 @@ const MainSection = () => {
             <SlGlobe /> View Original
           </a>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 w-full">
           <div className=" text-[#858584]">Tags</div>
           <div className=" flex gap-4">
             {example.tags.map((tag, id) => {
-              return <div className={tagclass}>{tag}</div>;
+              return (
+                <div className={tagclass} key={id}>
+                  {tag}
+                </div>
+              );
             })}
           </div>
         </div>
