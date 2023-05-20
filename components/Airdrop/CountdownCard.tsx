@@ -13,16 +13,16 @@ const CountdownCard = () => {
       <div>Airdrop starts in</div>
       <div className="flex">
         <div className=" w-1/3">
-          <p className="text-4xl font-semibold"> 59 : </p>
-          Hours
+          <p className="text-3xl font-semibold"> 59 : </p>
+          <p className=" text-xs">Hours</p>
         </div>
         <div className=" w-1/3">
-          <p className="text-4xl font-semibold"> 59 :</p>
-          Minutes
+          <p className="text-3xl font-semibold"> 59 :</p>
+          <p className=" text-xs">Minutes</p>
         </div>
         <div className=" w-1/3">
-          <p className="text-4xl font-semibold"> 59</p>
-          Seconds
+          <p className="text-3xl font-semibold"> 59 </p>
+          <p className=" text-xs">Seconds</p>
         </div>
       </div>
       <div
